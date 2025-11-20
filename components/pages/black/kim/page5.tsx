@@ -26,7 +26,7 @@ export default function Page({
 
   // SET CONTENT DATA
   const VSL = VSLBlackKim;
-  const videoId = "68a77525bbcb512da47ca857";
+  const videoId = "691e6c43d55a0071a20f4ce0";
   const backLink = `https://${userHost}/promo`;
   const pitchTime = 630;
 
