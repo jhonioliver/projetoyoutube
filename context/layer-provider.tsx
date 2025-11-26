@@ -30,8 +30,8 @@ export function LayerProvider({
 }: LayerProviderProps) {
 
   // SET LINKS
-  const frontLink = 'https://pay.hotmart.com/';
-  const promoLink = 'https://pay.hotmart.com/';
+  const frontLink = 'https://go.centerpag.com/PPU38CQ3Q0B';
+  const promoLink = 'https://go.centerpag.com/PPU38CQ3U0O';
 
   const contextValue = {
     host,
