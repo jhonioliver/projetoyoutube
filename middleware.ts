@@ -1,13 +1,13 @@
 import { NextRequest, NextResponse } from 'next/server';
 
 // LOCAL TEST PARAM
-const localTestParam = 'jabscnasjchasa';
+const localTestParam = 'JSvEyAogeImhnLAP';
 
 // PARAM LIST
 const paramList: Record<string, string> = {
-  'opportunity': 'kim',
-  'revealed': 'rock',
-  'exclusive': 'megan',
+  'KPTSqxgasIkXDoN': 'kim',
+  'DhvR0HwvtT5hwMg': 'rock',
+  'bw5epB1IhzbROy3': 'megan',
 };
 
 export function middleware(req: NextRequest) {

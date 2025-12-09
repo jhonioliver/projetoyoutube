@@ -1,48 +1,43 @@
 import { useEffect } from "react";
 
-export default function VSLBlackRock() {
+export default function VSLBlackKim() {
   useEffect(() => {
     const loadPlayerScript = () => {
-      // Evita carregar o script duas vezes
       if (document.querySelector('script[src*="691f5c9b5c8042a2b56b8fc7"]')) return;
-
       const script = document.createElement("script");
-      script.src =
-        "https://scripts.converteai.net/1c3bcfc5-8544-4f0a-9e4c-0927e07f2e22/players/691f5c9b5c8042a2b56b8fc7/v4/player.js";
+      script.src = "https://scripts.converteai.net/1c3bcfc5-8544-4f0a-9e4c-0927e07f2e22/players/691f5c9b5c8042a2b56b8fc7/v4/player.js";
       script.async = true;
-
       script.onload = () => {
         console.log("Player script loaded successfully");
       };
-
       script.onerror = () => {
         console.error("Failed to load player script");
       };
-
       document.head.appendChild(script);
     };
 
     loadPlayerScript();
 
     return () => {
-      const existingScript = document.querySelector(
-        'script[src*="691f5c9b5c8042a2b56b8fc7"]'
-      );
-      if (existingScript) existingScript.remove();
+      const existingScript = document.querySelector('script[src*="691f5c9b5c8042a2b56b8fc7"]');
+      if (existingScript) {
+        existingScript.remove();
+      };
     };
   }, []);
 
   return (
-    // @ts-expect-error - Player script carregado dinamicamente
-    <vturb-smartplayer
-      id="vid-691f5c9b5c8042a2b56b8fc7"
-      style={{
+    // @ts-expect-error - Player script is not defined in the global scope
+    <vturb-smartplayer 
+      id="vid-691f5c9b5c8042a2b56b8fc7" 
+      style={{ 
         width: "100%",
-        margin: "0 auto",
+        margin: "0 auto", 
         display: "block",
         "--player-border-radius": "20px",
         "--player-box-shadow": "0 5px 5px 0 rgba(0, 0, 0, 0.2)",
-      }}
+      }} 
     />
   );
-}
+
+};

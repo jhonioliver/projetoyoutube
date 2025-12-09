@@ -14,16 +14,23 @@ export default function Page({
   handleClick: () => void,
 }) {
 
+  // COMPONENT STATES
   const [visible, setVisible] = useState<boolean>(false);
 
+  // IMPORT CONTEXT DATA
   const userLayerData = useLayer();
+
+  // USER LAYER DATA
   const userHost = userLayerData.host;
   const userFrontLink = userLayerData.frontLink;
 
+  // SET CONTENT DATA
   const VSL = VSLBlackRock;
   const videoId = "691f5c9b5c8042a2b56b8fc7";
   const backLink = `https://${userHost}/promo`;
-  const pitchTime = 630;
+  const pitchTime = 700;
+
+  // VIDEO VERIFY
   useEffect(() => {
     if (!visible) {
       const intervalId = setInterval(() => {
@@ -36,6 +43,7 @@ export default function Page({
     };
   }, [videoId, visible]);
 
+  // BACK REDIRECT
   useEffect(() => {
     function setBackRedirect(url: string) {
       let urlBackRedirect = url;
