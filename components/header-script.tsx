@@ -1,9 +1,9 @@
 import Script from "next/script";
 
 const idList: Record<string, string> = {
-  kim: "691e6c43d55a0071a20f4ce0",
-  elon: "691e6c43d55a0071a20f4ce0",
-  shakira: "691e6c43d55a0071a20f4ce0",
+  kim: "685d9fc41fb64848d942c089",
+  rock: "685d9fc41fb64848d942c089",
+  megan: "685d9fc41fb64848d942c089",
 };
 
 export default function HeaderScript({ content }: { content: string }) {
