@@ -30,8 +30,8 @@ export function LayerProvider({
 }: LayerProviderProps) {
 
   // SET LINKS
-  const frontLink = 'https://go.centerpag.com/PPU38CQ3Q0B';
-  const promoLink = 'https://go.centerpag.com/PPU38CQ3U0O';
+  const frontLink = 'https://checkout.elevationpay.com.br/checkout/cmq2ov34h0vbi01pscvw9mwk3?offer=F7LC3XM';
+  const promoLink = 'https://checkout.elevationpay.com.br/checkout/cmq2ov34h0vbi01pscvw9mwk3?offer=4KUKT8E';
 
   const contextValue = {
     host,
